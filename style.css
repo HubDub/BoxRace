@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+#container {
+  width: 950px;
+  height: 50px;
+  background: green;
+  position: relative;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+}
+
+#box2 {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  position: absolute;
+}
+#box3 {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  position: absolute;
+}
+
+#box4 {
+  width: 50px;
+  height: 50px;
+  background: purple;
+  position: absolute;
+}
+
+#winner {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2em;
+}
