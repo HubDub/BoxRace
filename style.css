@@ -1,12 +1,14 @@
 h1 {
   text-align: center;
-  color: blue;
+  color: green;
 }
 
 #container {
   width: 950px;
+  margin: 0;
+  padding: 0;
   height: 50px;
-  background: green;
+  background: black;
   position: relative;
 }
 
@@ -49,13 +51,23 @@ h1 {
 }
 
 #button {
+  font-size: 5em;
   position: absolute;
+  left: 50%;
+  margin-left: -150px;
   text-align: center;
-  background: white;
-  border-radius: 25%;
+  color: black;
+  font-weight: 900;
+  background-color: #483d8b;
+  border-radius: 35%;
+  width: 300px;
+  height: 200px;
+  border: 10px solid black:
 }
+
 #winner {
   text-align: center;
+  color: green;
   font-weight: 900;
   font-size: 2em;
 }

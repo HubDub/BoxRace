@@ -3,7 +3,14 @@ console.log("this is updating");
 
 document.getElementById("button").addEventListener("click", function( event) {
   console.log("you clicked the button");
+  race();
+});
 
+window.onload = function() {
+  race();
+};
+
+var race = function() {
 
   //we'll create a starting position:
   var position1 = 0;
@@ -23,15 +30,19 @@ document.getElementById("button").addEventListener("click", function( event) {
     {
       clearInterval(time);
       if(position1 >= 900)
-      {winnerOutput.innerHTML = "Red Wins!";}
+      {winnerOutput.innerHTML = "<span style = 'color:red'>Red Wins!</span>";}
       else if(position2 >= 900)
-      {winnerOutput.innerHTML = "blue Wins!";}
+      {winnerOutput.innerHTML = "<span style = 'color:blue'>Blue Wins!</span>";}
+
       else if(position3 >= 900)
-      {winnerOutput.innerHTML = "Yellow Wins!";}
+      {winnerOutput.innerHTML = "<span style = 'color:yellow'>Yellow Wins!</span>";}
+
       else if(position4 >= 900)
-      {winnerOutput.innerHTML = "Purple Wins!";}
+      {winnerOutput.innerHTML = "<span style = 'color:Purple'>Purple Wins!</span>";}
+
       else
-      {winnerOutput.innerHTML = "Orange Wins!";}
+      {winnerOutput.innerHTML = "<span style = 'color:orange'>Orange Wins!</span>";}
+
       console.log("after moving boxes");
     }
     else
@@ -53,5 +64,5 @@ document.getElementById("button").addEventListener("click", function( event) {
 
     }
   }
-})
+}
 console.log("after window load");
